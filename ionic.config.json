@@ -1,0 +1,7 @@
+{
+  "name": "SecondIonicApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
