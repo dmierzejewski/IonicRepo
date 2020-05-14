@@ -18,15 +18,21 @@ export class AuthGuardService implements CanActivate {
     return new Promise((resolve, reject) => {
       firebase.auth().onAuthStateChanged((user: firebase.User) => {
         if (user) {
-        resolve(true);
+          // console.log(user);
+          resolve(true);
         } else {
-
-          let temp = this.appService.redirect;
-          console.log('odmowa z ' +  this.appService.redirect + ' ' + state.url);
-          this.appService.redirect = state.url;
-          if (temp !== 'my'){
-            this.router.navigate([ '/authentication' ], { queryParams: { returnUrl: state.url } });
-          }
+          //if(!this.appService.flag){
+            let temp = this.appService.redirect;
+         
+            //  if (temp !== 'my'){
+              console.log('odmowa z ' +  this.appService.redirect + ' ' + state.url);
+              this.appService.redirect = state.url;
+              this.router.navigate([ '/authentication' ], { queryParams: { returnUrl: state.url } });
+              
+            //  }
+         // }
+          //this.appService.flag = false;
+         
          
           resolve(false);
         }

@@ -34,16 +34,16 @@ export class MyPage implements OnInit {
               public authService: AuthService,
               public appService: AppService) {
 
-                // XD
               }
 
   ngOnInit() {
     this.getData();
   }
 
-  async logOut() {
+  logOut() {
+   // this.appService.flag = true;
     this.appService.redirect = 'my';
-    await this.router.navigateByUrl('my');
+    this.router.navigateByUrl('start');
     this.authService.logoutUser();
   }
 

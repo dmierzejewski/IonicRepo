@@ -42,8 +42,8 @@ export class SearchPage implements OnInit {
   searchProducts() {
     if (this.query.length >= 2) {
       this.products = this.appService.products.filter((product: Product) => product.name.toLowerCase().includes(this.query.toLowerCase()));
-      //this.productService.getProducts().subscribe(((products) => {
-        //this.products = products.filter((product: Product) => product.name.toLowerCase().includes(this.query.toLowerCase()));
+      // this.productService.getProducts().subscribe(((products) => {
+        // this.products = products.filter((product: Product) => product.name.toLowerCase().includes(this.query.toLowerCase()));
      // }));
     } else {
       // this.products = new Array<any>();

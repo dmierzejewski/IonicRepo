@@ -73,7 +73,10 @@
     <ng-container *ngIf="isLogged()">
       <ion-item>
         <div style="width:100%;text-align: center;">
-          <span class="logout" (click)="logOut()">Wyloguj</span>
+          <span class="logout" (click)="logOut()">
+          <!--  <a routerLink="/my" routerLinkActive="active"> Wyloguj</a> -->
+          Wyloguj
+           </span>
         </div>
       </ion-item>
     </ng-container>

@@ -19,10 +19,6 @@ const routes: Routes = [
     path: 'new-todos',
     loadChildren: () => import('./new-todos/new-todos.module').then( m => m.NewTodosPageModule)
   },
-  //{
-  //  path: 'catalog',
-    //loadChildren: () => import('./catalog/catalog.module').then( m => m.CatalogPageModule)
-  //},
   {
     path: 'catalog-options',
     loadChildren: () => import('./catalog-options/catalog-options.module').then( m => m.CatalogOptionsPageModule)
@@ -35,11 +31,11 @@ const routes: Routes = [
     path: 'scan',
     loadChildren: () => import('./scan/scan.module').then( m => m.ScanPageModule),
     canActivate: [AuthGuardService],
-    //ahahah
   },
   {
     path: 'products',
-    loadChildren: () => import('./products/products.module').then( m => m.ProductsPageModule)
+    loadChildren: () => import('./products/products.module').then( m => m.ProductsPageModule),
+    canActivate: [AuthSearchProductsGuard]
   },
   {
     path: 'search',

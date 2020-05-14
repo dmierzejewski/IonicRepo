@@ -10,6 +10,30 @@
  <!--  <img src="{{storage.refFromURL('gs://scanandgo-pwsa-6148c.appspot.com/products/12345.jpg')}}"> -->
  <div class="fadeIn">
   <ion-grid>
+    <ion-row>
+      <ion-col size="6" >
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Wygoda</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <img class="startImage" src="../../assets/photo2.png">
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6" >
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Nowoczesność</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <img class="startImage" src="../../assets/photo3.png">
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+
     <ion-row *ngFor="let row of grid">
       <ion-col size="6" *ngFor="let col of row">
         <ion-card>

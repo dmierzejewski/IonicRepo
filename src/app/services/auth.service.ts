@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import * as firebase from 'firebase/app';
 import { Storage } from '@ionic/Storage';
+import { Router } from '@angular/router';
 @Injectable({
   providedIn: 'root'
 })
@@ -8,7 +9,7 @@ import { Storage } from '@ionic/Storage';
 export class AuthService {
 
 
-  constructor( ) {
+  constructor(  private router: Router) {
   }
 
   getUserName(): string {
@@ -28,6 +29,7 @@ export class AuthService {
   }
 
   logoutUser(): Promise<void> {
+    // this.router.navigateByUrl('my');
     return firebase.auth().signOut();
   }
 

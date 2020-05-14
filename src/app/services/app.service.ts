@@ -24,6 +24,7 @@ export class AppService {
   lon;
   products: Product[] = new Array<Product>();
   redirect = '/my';
+  // flag = false;
   // storage = firebase.storage();
   // localDataService: any;
 
