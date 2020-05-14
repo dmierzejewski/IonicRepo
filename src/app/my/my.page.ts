@@ -32,7 +32,10 @@ export class MyPage implements OnInit {
               // private geolocation: Geolocation,
               private router: Router,
               public authService: AuthService,
-              public appService: AppService) {}
+              public appService: AppService) {
+
+                // XD
+              }
 
   ngOnInit() {
     this.getData();
