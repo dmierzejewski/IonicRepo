@@ -90,7 +90,7 @@ export class AppComponent implements OnInit {
     private splashScreen: SplashScreen,
     private router: Router
   ) {
-    this.splashScreen.show();
+    // this.splashScreen.show();
     this.initializeApp();
   }
 

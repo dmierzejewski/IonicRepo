@@ -17,7 +17,7 @@ ion-card{
 }
 ion-card-content{
     padding:10px;
-    font-size: 0.9em;
+    font-size: 0.92em;
 }
 ion-card-header{
     padding:10px;
@@ -26,9 +26,12 @@ ion-card-header{
 }
 ion-card-title{
     font-weight: 600;
-    font-size: 0.92em;
+    font-size: 0.93em;
     
 }
 .startImage{
     min-width:100%; 
+}
+ion-card-content.smaller-padding{
+    padding:0px;
 }

@@ -1,7 +1,8 @@
 {
   "name": "SecondIonicApp",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }
