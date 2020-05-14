@@ -27,7 +27,6 @@ const routes: Routes = [
     path: 'catalog-options',
     loadChildren: () => import('./catalog-options/catalog-options.module').then( m => m.CatalogOptionsPageModule)
   },
- 
   {
     path: 'authentication',
     loadChildren: () => import('./authentication/authentication.module').then( m => m.AuthenticationPageModule)
