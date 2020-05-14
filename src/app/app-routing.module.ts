@@ -36,6 +36,7 @@ const routes: Routes = [
     path: 'scan',
     loadChildren: () => import('./scan/scan.module').then( m => m.ScanPageModule),
     canActivate: [AuthGuardService],
+    //ahahah
   },
   {
     path: 'products',
