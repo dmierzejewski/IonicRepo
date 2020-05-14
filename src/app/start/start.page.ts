@@ -16,7 +16,7 @@ export class StartPage implements OnInit {
 
   constructor(private infoService: InfoService) {
 
-//test
+//testy
 
 
   }
