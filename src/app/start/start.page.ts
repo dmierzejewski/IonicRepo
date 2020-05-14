@@ -11,47 +11,14 @@ export class StartPage implements OnInit {
 
   path = ' ';
   grid: Array<Array<Info>> = [[]];
-  // storage = firebase.storage();
-
 
   constructor(private infoService: InfoService) {
-
-//test mastera
-
 
   }
 
   ngOnInit() {
     this.getInfos();
-    
   }
-
-  /*
-  dissetImage(){
-    
-     
-      document.getElementById('id').setAttribute('src','');
-    
-  }
-
-  setImage(){
-    const storageRef = this.storage.ref();
-    
-
-    storageRef.child('products/12345.jpg').getDownloadURL().then(function(url) {
-
-     // document.getElementById("id").innerHTML="ahaha";
-     
-      document.getElementById('id').setAttribute('src',url);
-     // this.path=url;
-      //document.querySelector('img').src = test;
-     // document.querySelector
-
-        }).catch( function (error) {
-          console.log(error);
-        });
-  }
-  */
 
   getInfos() {
     this.infoService.getInfos().subscribe(((info) => {
